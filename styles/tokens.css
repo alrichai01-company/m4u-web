@@ -1,0 +1,46 @@
+/* ============================================================================
+   M4U DESIGN TOKENS
+   The approved visual identity, expressed once. Every color, type, spacing and
+   timing value in the site resolves back to a variable here. Do not hardcode
+   brand values elsewhere — change them here and the whole site follows.
+   ============================================================================ */
+:root {
+  /* ── Color ─────────────────────────────────────────────────────────────── */
+  --bg: #faf8f5;
+  --ivory: #f3efe7;
+  --ink: #161310;
+  --ink-soft: #4a443c;
+  --gold: #b08d57;
+  --gold-deep: #96733f;
+  --beige: #e9e1d2;
+  --taupe: #8a7e6e;
+  --line: rgba(22, 19, 16, 0.1);
+
+  /* ── Elevation ─────────────────────────────────────────────────────────── */
+  --shadow: 0 24px 60px -24px rgba(22, 19, 16, 0.18);
+
+  /* ── Motion ────────────────────────────────────────────────────────────── */
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* ── Type ──────────────────────────────────────────────────────────────── */
+  /* next/font injects --font-serif / --font-sans on <html>; fall back to the
+     literal family names if the font layer isn't present (e.g. Storybook). */
+  --serif: var(--font-serif), "Cormorant Garamond", Georgia, serif;
+  --sans: var(--font-sans), "Jost", "Helvetica Neue", Arial, sans-serif;
+
+  /* ── Rhythm & measure ──────────────────────────────────────────────────── */
+  /* Consistent vertical gap between a headline block and its content grid. */
+  --rhythm: clamp(3rem, 7vw, 5.5rem);
+  /* Editorial reading measure (~60–68 characters). */
+  --measure: 38rem;
+
+  /* Horizontal page gutter — raised mobile floor for breathing room. */
+  --gutter: clamp(1.7rem, 5vw, 4rem);
+  /* Vertical section padding. */
+  --section-y: clamp(5rem, 11vw, 9.5rem);
+}
+
+:root[lang="hi"] {
+  --serif: var(--font-hi), "Noto Sans Devanagari", sans-serif;
+  --sans: var(--font-hi), "Noto Sans Devanagari", sans-serif;
+}

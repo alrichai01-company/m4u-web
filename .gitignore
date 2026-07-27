@@ -1,0 +1,31 @@
+# Dependencies
+/node_modules
+
+# Next.js build output
+/.next
+/out
+/build
+
+# Runtime data (file-based store: pageviews, inquiries, chats — regenerated locally)
+/.data
+
+# Environment variables (secrets — never commit)
+.env
+.env*.local
+
+# Vercel
+.vercel
+
+# TypeScript build info
+*.tsbuildinfo
+next-env.d.ts
+
+# Misc / OS
+.DS_Store
+*.pem
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.idea
+.vscode/*
+!.vscode/extensions.json

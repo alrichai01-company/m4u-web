@@ -1,0 +1,1 @@
+export { CollectionPortfolio } from "./CollectionPortfolio";
